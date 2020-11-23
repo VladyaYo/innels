@@ -1,0 +1,14 @@
+.howWeStarted{
+  .container{
+    @include flex($row,$btwen,$center);
+  }
+  .text{
+    max-width: rem(437px);
+    h2{
+      margin-bottom: 35px;
+    }
+  }
+  .image{
+    max-width: calc(100% - 520px);
+  }
+}

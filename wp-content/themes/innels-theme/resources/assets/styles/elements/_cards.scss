@@ -1,0 +1,17 @@
+.cards {
+  @include flex($row, $btwen, $start);
+  padding: rem(40px 0 100px);
+  .item {
+    @include flex($col, $start, $center);
+    max-width: rem(388px);
+    width: 90%;
+    margin-bottom: rem(30px);
+    @include respond-to($tablet-portrait) {
+      margin: 20px auto;
+    }
+    p {
+      text-align: center;
+      margin-top: rem(30px);
+    }
+  }
+}

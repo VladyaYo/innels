@@ -1,0 +1,31 @@
+footer {
+  background-color: $bg;
+  .container {
+    @include flex($row, $btwen, $start);
+    padding: 50px 0 55px;
+  }
+  h3 {
+    margin-bottom: rem(24px);
+  }
+  .menuFooter {
+    nav {
+      ul {
+        @include flex($row, $btwen, $start);
+        max-width: 614px;
+        li {
+          width: 33%;
+          text-align: left;
+          margin-bottom: rem(24px);
+        }
+      }
+    }
+  }
+  .info{
+    .links{
+      margin-top: 20px;
+      a{
+        margin: rem(0 20px 10px 0);
+      }
+    }
+  }
+}

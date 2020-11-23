@@ -1,0 +1,22 @@
+header {
+  position: sticky;
+  top: 0;
+  background-color: $white;
+  z-index: 100;
+  .container {
+    @include flex($row, $btwen, $center);
+    nav {
+      max-width: rem(953px);
+      width: 90%;
+
+      .menu {
+        @include flex($row, $btwen, $center);
+        padding: rem(52px 0);
+        li {
+          a {
+          }
+        }
+      }
+    }
+  }
+}

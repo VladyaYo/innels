@@ -1,0 +1,16 @@
+.whyToSell{
+  background-color: $white;
+  h2{
+    text-align: center;
+  }
+.cards{
+  .item{
+    align-items: start;
+    margin-top: 40px;
+    h3{
+      text-align: left;
+      padding-top: rem(16px);
+    }
+  }
+}
+}

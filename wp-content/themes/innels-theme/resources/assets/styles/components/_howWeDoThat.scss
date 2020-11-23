@@ -1,0 +1,27 @@
+.howWeDoThat{
+  padding-bottom: rem(150px);
+  .container{
+    @include flex($row,$btwen,$start);
+
+  }
+  .text{
+    h2{
+      padding-bottom: 40px;
+    }
+    max-width: 604px;
+    width: calc(100% - 770px);
+    @include respond-to($tablet-portrait){
+      margin: auto;
+      width: 90%;
+    }
+  }
+  .info{
+max-width: 691px;
+    width: 90%;
+    @include respond-to($tablet-portrait){
+      margin: auto;
+
+    }
+  }
+
+}

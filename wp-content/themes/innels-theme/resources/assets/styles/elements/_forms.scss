@@ -1,0 +1,19 @@
+//inputs
+input[type=text],input[type=email]{
+  @extend %body;
+  color: $main-black;
+  border: 1px solid $gray;
+  border-radius: 4px;
+  padding: rem(14px 16px);
+  transition: .3s ease all;
+  outline: none;
+  &:focus{
+    border: 1px solid $main-black;
+  }
+}
+input[type=submit]{
+  border: none;
+  transition: .3s ease all;
+  cursor: pointer;
+  @extend a.button;
+}
