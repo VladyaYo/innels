@@ -14,10 +14,20 @@
       margin: auto;
       width: 90%;
     }
+    .wysiwyg{
+      margin-bottom: 30px;
+    }
   }
   .info{
-max-width: 691px;
+    max-width: 691px;
     width: 90%;
+    margin: auto;
+    .image{
+
+      svg{
+        max-width: 100%;
+      }
+    }
     @include respond-to($tablet-portrait){
       margin: auto;
 

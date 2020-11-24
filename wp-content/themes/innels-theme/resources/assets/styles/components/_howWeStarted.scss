@@ -4,11 +4,17 @@
   }
   .text{
     max-width: rem(437px);
+    @include respond-to($tablet-portrait){
+      max-width: rem(340px);
+    }
     h2{
       margin-bottom: 35px;
     }
   }
   .image{
     max-width: calc(100% - 520px);
+    @include respond-to($tablet-portrait){
+      max-width: calc(100% - 386px)
+    }
   }
 }

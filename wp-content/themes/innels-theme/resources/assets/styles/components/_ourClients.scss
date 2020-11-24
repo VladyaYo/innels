@@ -12,6 +12,12 @@
       position: relative;
       margin: 0 10px;
       outline: none;
+      @include respond-to($tablet-portrait){
+        height: 250px;
+      }
+      @include respond-to($phone){
+        height: 160px;
+      }
       img{
         max-width: calc(100% - 40px);
         width: auto;

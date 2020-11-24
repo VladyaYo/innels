@@ -37,7 +37,7 @@ get_header();
                 </div>
             </div>
         </section>
-        <section class="whatWeDo" id="#whatWeDo">
+        <section class="whatWeDo" id="whatWeDo">
             <div class="container">
                 <h2><?php the_field('what_we_do_heading'); ?></h2>
                 <?php if( have_rows('what_we_do_cards') ): ?>

@@ -15,5 +15,6 @@ input[type=submit]{
   border: none;
   transition: .3s ease all;
   cursor: pointer;
+  -webkit-appearance: none;
   @extend a.button;
 }

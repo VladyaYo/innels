@@ -17,5 +17,6 @@ a.button{
   justify-content: center;
   &:hover{
     background-color: $secondary;
+    color: $white;
   }
 }

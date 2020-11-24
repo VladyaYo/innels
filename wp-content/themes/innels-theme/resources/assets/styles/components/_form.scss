@@ -10,10 +10,16 @@
   .form{
     max-width: 704px;
     width: calc(46% - 30px);
+
+    @include respond-to($tablet-portrait){
+      width: 100%;
+      margin: rem(0 0 60px 0);
+    }
     form{
       .line{
         display: inline-flex;
         justify-content: space-between;
+        width: 100%;
         label{
           max-width: calc(50% - 10px);
         }
@@ -30,6 +36,7 @@
     }
     input[type="submit"]{
       margin-top: 15px;
+
     }
   }
   .direct{

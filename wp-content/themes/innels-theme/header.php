@@ -35,5 +35,10 @@
                     'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
                 ] );
                 ?>
+            <div class="brgBtn" id="brgMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
 	</header>

@@ -5,18 +5,35 @@ header {
   z-index: 100;
   .container {
     @include flex($row, $btwen, $center);
+    .logo{
+      margin: 20px 0;
+
+    }
     nav {
       max-width: rem(953px);
       width: 90%;
+    }
+  }
+  .menu {
+    @include flex($row, $btwen, $center);
+    padding: rem(52px 0);
+    transition: .5s ease all;
 
-      .menu {
-        @include flex($row, $btwen, $center);
-        padding: rem(52px 0);
-        li {
-          a {
-          }
+    &.scroll{
+      padding: rem(20px);
+    }
+    li {
+      a {
+        @include respond-to($tablet-portrait){
+          margin: 10px auto;
+        }
+        &:hover{
+          color: $secondary;
         }
       }
     }
+  }
+  .brgBtn {
+    display: none;
   }
 }
