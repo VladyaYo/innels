@@ -1,0 +1,51 @@
+@include respond-to($tablet-landscape){
+.hero .image {
+  max-width: 60%;
+  margin: -260px 0 0 auto;
+}
+}
+@include respond-to($tablet-portrait){
+  .contactUs .direct .item:first-child{
+    border-right: none;
+  }
+  .howWeDoThat {
+    padding-bottom: 0.375rem;
+  }
+  .contactUs{
+    padding: rem(30px 0 50px);
+  }
+}
+@include respond-to($phone-land){
+  .hero .image {
+    max-width: 70%;
+    margin: -100px 0 0 auto;
+  }
+  .cards .item {
+    width: 48%;
+  }
+  .contactUs .direct .item {
+    width: 48%;
+    padding: 0;
+  }
+  .contactUs .direct .item:last-child{
+    border-top: none;
+    padding-top: 0;
+    margin-top: 0;
+  }
+}
+@include respond-to($phone){
+  .menuFooter{
+    margin-top: 20px;
+  }
+  footer .menuFooter nav ul li{
+    width: 30%;
+  }
+  section {
+    padding: 60px 0 10px;
+  }
+  .contactUs .direct .item:last-child{
+    border-top: 1px solid $main-black;
+    padding-top: 15px;
+    margin-top: 15px;
+  }
+}

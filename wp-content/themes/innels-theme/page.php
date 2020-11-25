@@ -47,7 +47,7 @@ get_header();
                             ?>
                             <div class="item">
                                 <div class="image">
-                                    <img src="<?php echo $image; ?>" alt="icon what we do">
+                                    <?php echo $image; ?>
                                 </div>
                                 <p><?php the_sub_field('text'); ?></p>
                             </div>
